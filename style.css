@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: inherit;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+svg {
+    height: auto;
+    width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* style */
+
+:root {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+body {
+    padding-inline: 1ch;
+    padding-block: 1rem;
+}
+
+* + section {
+    margin-block-start: 1rem;
+}
+
+a {
+    text-decoration: underline;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover, a:focus {
+    text-decoration-style: dotted;
+}
+
+.socials {
+    list-style: none;
+}
+
+.releases {
+    list-style: none;
+}
+
+.releases li {
+    display: flex;
+    column-gap: 4ch;
+    flex-wrap: wrap;
+}
+
+@media (width < 28rem) {
+    .releases li {
+        display: block;
+    }
+
+    .releases li + li {
+        margin-block-start: 1rem;
+    }
+}
