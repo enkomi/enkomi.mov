@@ -85,9 +85,16 @@ a:hover, a:focus {
 }
 
 .releases li {
-    display: flex;
+    /* display: flex;
     column-gap: 4ch;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2ch;
+}
+
+.redacted {
+    background: hsl(0, 0%, 100%);
 }
 
 @media (width < 28rem) {
